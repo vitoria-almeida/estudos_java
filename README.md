@@ -2,6 +2,7 @@
 Repositório contendo exemplos práticos de tópicos que estudei utilizando Java.
 
 **Tópicos:**
+  &nbsp;
   Estruturas de Repetição;
   &nbsp;
   Arrays;
