@@ -2,17 +2,14 @@
 Repositório contendo exemplos práticos de tópicos que estudei utilizando Java.
 
 **Tópicos:**
-
-
-  &nbsp;
   Estruturas de Repetição;  
   Arrays;  
   No;  
-  Generics;
-  Pilhas;
-  Filas;
-  Listas Encadeadas;
-  Listas Duplamente Encadeadas;
-  Listas Circulares;
-  Árvores;
+  Generics;  
+  Pilhas;  
+  Filas;  
+  Listas Encadeadas;  
+  Listas Duplamente Encadeadas;  
+  Listas Circulares;  
+  Árvores;  
   
