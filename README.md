@@ -1,8 +1,9 @@
 # estudos_java
 Repositório contendo exemplos práticos de tópicos que estudei utilizando Java.
 
-Tópicos:
-  /n Estruturas de Repetição;
+**Tópicos:**
+  Estruturas de Repetição;
+  &nbsp;
   Arrays;
   No;
   Generics;
