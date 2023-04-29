@@ -66,7 +66,7 @@ public class Main {
 		System.out.println(no3.getProximoNo());
 		System.out.println(no4.getProximoNo());*/
 		
-		Pilha pilha1 = new Pilha();
+		/*Pilha pilha1 = new Pilha();
 		pilha1.metodoPush(new NoPilha(1));
 		pilha1.metodoPush(new NoPilha(2));
 		pilha1.metodoPush(new NoPilha(3));
@@ -84,6 +84,25 @@ public class Main {
 		
 		System.out.println("Topo da pilha: " + pilha1.metodoTop());
 		
-		System.out.println("False se a pilha não estiver vazia e true se estiver vazia: " + pilha1.metodoIsEmpty());
+		System.out.println("False se a pilha não estiver vazia e true se estiver vazia: " + pilha1.metodoIsEmpty());*/
+	
+		Fila fila1 = new Fila();
+		fila1.metodoEnqueue(new NoFila("um"));
+		fila1.metodoEnqueue(new NoFila("dois"));
+		fila1.metodoEnqueue(new NoFila("tres"));
+		fila1.metodoEnqueue(new NoFila("quatro"));
+		fila1.metodoEnqueue(new NoFila("cinco"));
+		fila1.metodoEnqueue(new NoFila("seis"));
+		
+		System.out.println(fila1);
+		
+		System.out.println(fila1.metodoDequeue());
+		
+		System.out.println(fila1);
+		
+		fila1.metodoEnqueue(new NoFila("ultimooo"));
+		System.out.println(fila1);
+		
+		System.out.println(fila1.metodoFirst());
 	}
 }
