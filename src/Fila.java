@@ -5,12 +5,13 @@ public class Fila {
 		this.refNoEntradaFila = null;
 	}
 	
-	public void metodoEnqueue(NoFila novoNo) {
+	public void metodoEnqueue(Object obj) {
+		NoFila novoNo = new NoFila(obj);
 		novoNo.setRefNo(refNoEntradaFila);
 		refNoEntradaFila = novoNo; 
 	}
 	
-	public NoFila metodoFirst() {
+	public Object metodoFirst() {
 		if (!this.metodoIsEmpty()) {
 			NoFila primeiroNo = refNoEntradaFila;
 			while (true) {
@@ -19,11 +20,11 @@ public class Fila {
 				} else {
 					break;
 				}
-			} return primeiroNo;
+			} return primeiroNo.getObject();
 		} return null;
 	}
 	
-	public NoFila metodoDequeue() {
+	public Object metodoDequeue() {
 		if (!this.metodoIsEmpty()) {
 			NoFila primeiroNo = refNoEntradaFila;
 			NoFila noAuxiliar = refNoEntradaFila;
@@ -35,7 +36,7 @@ public class Fila {
 					noAuxiliar.setRefNo(null);
 					break;
 				}
-			} return primeiroNo;
+			} return primeiroNo.getObject();
 		} return null;
 	}
 	
