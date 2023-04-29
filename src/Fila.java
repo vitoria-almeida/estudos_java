@@ -1,19 +1,19 @@
-public class Fila {
-	private NoFila refNoEntradaFila;
+public class Fila<T> {
+	private NoFila<T> refNoEntradaFila;
 	
 	public Fila() {
 		this.refNoEntradaFila = null;
 	}
 	
-	public void metodoEnqueue(Object obj) {
-		NoFila novoNo = new NoFila(obj);
+	public void metodoEnqueue(T obj) {
+		NoFila<T> novoNo = new NoFila<T>(obj);
 		novoNo.setRefNo(refNoEntradaFila);
 		refNoEntradaFila = novoNo; 
 	}
 	
-	public Object metodoFirst() {
+	public T metodoFirst() {
 		if (!this.metodoIsEmpty()) {
-			NoFila primeiroNo = refNoEntradaFila;
+			NoFila<T> primeiroNo = refNoEntradaFila;
 			while (true) {
 				if(primeiroNo.getRefNo() != null) {
 					primeiroNo = primeiroNo.getRefNo();
@@ -24,10 +24,10 @@ public class Fila {
 		} return null;
 	}
 	
-	public Object metodoDequeue() {
+	public T metodoDequeue() {
 		if (!this.metodoIsEmpty()) {
-			NoFila primeiroNo = refNoEntradaFila;
-			NoFila noAuxiliar = refNoEntradaFila;
+			NoFila<T> primeiroNo = refNoEntradaFila;
+			NoFila<T> noAuxiliar = refNoEntradaFila;
 			while (true) {
 				if(primeiroNo.getRefNo() != null) {
 					noAuxiliar = primeiroNo;
@@ -47,7 +47,7 @@ public class Fila {
 	@Override
 	public String toString() {
 		String stringRetorno = "";
-		NoFila noAuxiliar = refNoEntradaFila;
+		NoFila<T> noAuxiliar = refNoEntradaFila;
 		
 		if(refNoEntradaFila != null) {
 			while(true) {

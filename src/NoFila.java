@@ -1,27 +1,27 @@
-public class NoFila {
-	private Object object;
-	private NoFila refNo;
+public class NoFila<T> {
+	private T object;
+	private NoFila<T> refNo;
 	
-	public NoFila(Object object) {
+	public NoFila(T object) {
 		this.refNo = null;
 		this.object = object;
 	}
 	
 	public NoFila() {}
 
-	public Object getObject() {
+	public T getObject() {
 		return object;
 	}
 
-	public void setObject(Object object) {
+	public void setObject(T object) {
 		this.object = object;
 	}
 
-	public NoFila getRefNo() {
+	public NoFila<T> getRefNo() {
 		return refNo;
 	}
 
-	public void setRefNo(NoFila refNo) {
+	public void setRefNo(NoFila<T> refNo) {
 		this.refNo = refNo;
 	}
 

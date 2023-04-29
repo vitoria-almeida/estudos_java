@@ -86,7 +86,7 @@ public class Main {
 		
 		System.out.println("False se a pilha não estiver vazia e true se estiver vazia: " + pilha1.metodoIsEmpty());*/
 	
-		Fila fila1 = new Fila();
+		Fila<String> fila1 = new Fila<String>();
 		fila1.metodoEnqueue("um");
 		fila1.metodoEnqueue("dois");
 		fila1.metodoEnqueue("tres");
