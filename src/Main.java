@@ -66,5 +66,24 @@ public class Main {
 		System.out.println(no3.getProximoNo());
 		System.out.println(no4.getProximoNo());*/
 		
+		Pilha pilha1 = new Pilha();
+		pilha1.metodoPush(new NoPilha(1));
+		pilha1.metodoPush(new NoPilha(2));
+		pilha1.metodoPush(new NoPilha(3));
+		pilha1.metodoPush(new NoPilha(4));
+		pilha1.metodoPush(new NoPilha(5));
+		pilha1.metodoPush(new NoPilha(6));
+		System.out.println(pilha1);
+		
+		System.out.println("Tirar da pilha: " + pilha1.metodoPop());
+		System.out.println(pilha1);
+		System.out.println("Topo da pilha: " + pilha1.metodoTop());
+		
+		pilha1.metodoPush(new NoPilha(666666));
+		System.out.println(pilha1);
+		
+		System.out.println("Topo da pilha: " + pilha1.metodoTop());
+		
+		System.out.println("False se a pilha não estiver vazia e true se estiver vazia: " + pilha1.metodoIsEmpty());
 	}
 }
