@@ -5,15 +5,9 @@ Repositório contendo exemplos práticos de tópicos que estudei utilizando Java
 
 
   &nbsp;
-  Estruturas de Repetição;
-  &nbsp;
-  
-  Arrays;
-  &nbsp;
-  No;
-  &nbsp;
-  
-  
+  Estruturas de Repetição;  
+  Arrays;  
+  No;  
   Generics;
   Pilhas;
   Filas;
