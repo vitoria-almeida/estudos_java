@@ -1,5 +1,5 @@
 # estudos_java
-Repositório contendo exemplos práticos de tópicos que estudei utilizando Java.
+Repositório contendo exemplos práticos de tópicos de Estrutura de Dados utilizando Java.
 
 **Tópicos:**  
   Estruturas de Repetição;  
