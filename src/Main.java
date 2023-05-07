@@ -86,7 +86,7 @@ public class Main {
 		
 		System.out.println("False se a pilha não estiver vazia e true se estiver vazia: " + pilha1.metodoIsEmpty());*/
 	
-		Fila<String> fila1 = new Fila<String>();
+		/*Fila<String> fila1 = new Fila<String>();
 		fila1.metodoEnqueue("um");
 		fila1.metodoEnqueue("dois");
 		fila1.metodoEnqueue("tres");
@@ -103,6 +103,20 @@ public class Main {
 		fila1.metodoEnqueue("ultimooo");
 		System.out.println(fila1);
 		
-		System.out.println(fila1.metodoFirst());
+		System.out.println(fila1.metodoFirst());*/
+		
+		Lista<Integer> lista1 = new Lista<Integer>();
+		System.out.println(lista1.isEmpty());
+		lista1.add(0);
+		lista1.add(5);
+		lista1.add(10);		
+		lista1.add(15);
+		System.out.println(lista1.isEmpty());
+		lista1.add(20);
+		System.out.println(lista1);
+		System.out.println(lista1.get(3));
+		System.out.println(lista1.remove(3));
+		System.out.println(lista1.get(3));
+		System.out.println(lista1);
 	}
 }
