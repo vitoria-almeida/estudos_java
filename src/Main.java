@@ -105,7 +105,7 @@ public class Main {
 		
 		System.out.println(fila1.metodoFirst());*/
 		
-		Lista<Integer> lista1 = new Lista<Integer>();
+		/*Lista<Integer> lista1 = new Lista<Integer>();
 		System.out.println(lista1.isEmpty());
 		lista1.add(0);
 		lista1.add(5);
@@ -117,6 +117,16 @@ public class Main {
 		System.out.println(lista1.get(3));
 		System.out.println(lista1.remove(3));
 		System.out.println(lista1.get(3));
-		System.out.println(lista1);
+		System.out.println(lista1);*/
+		
+		ListaDupla<Integer> lista_dupla = new ListaDupla<Integer>();
+		lista_dupla.add(1);
+		lista_dupla.add(2);
+		lista_dupla.add(3);
+		lista_dupla.add(4);
+		lista_dupla.add(5);
+		System.out.println(lista_dupla);
+		lista_dupla.remove(1);
+		System.out.println(lista_dupla);
 	}
 }
